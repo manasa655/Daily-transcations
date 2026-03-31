@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Personal Finance Dashboard</title>
+    <link rel="stylesheet" href="./daily transcation vscode_files/style.css">
+</head>
+<body>
+
+<h1>💰 Personal Finance Dashboard</h1>
+
+<div class="buttons">
+    <button onclick="showForm(&#39;income&#39;)">➕ Add Income</button>
+    <button onclick="showForm(&#39;expense&#39;)">➖ Add Expense</button>
+    <button onclick="showData()">📊 View Summary</button>
+</div>
+
+<div id="form-area" style="display:none;">
+    <h3 id="form-title"></h3>
+    <form method="post" action="http://127.0.0.1:5000/add">
+        <input type="hidden" name="type" id="type">
+
+        <input type="text" name="category" placeholder="Category" required=""><br>
+        <input type="number" name="amount" placeholder="Amount" required=""><br>
+
+        <button type="submit">Save</button>
+    </form>
+</div>
+
+<div class="summary">
+    <h2>Summary</h2>
+    <p><b>Total:</b> ₹28580</p>
+    <p><b>Income:</b> ₹30110</p>
+    <p><b>Expense:</b> ₹1530</p>
+</div>
+
+<script>
+function showForm(type) {
+    document.getElementById("form-area").style.display = "block";
+    document.getElementById("type").value = type;
+    document.getElementById("form-title").innerText =
+        type === "income" ? "Add Income" : "Add Expense";
+}
+</script>
+
+
+</body></html>

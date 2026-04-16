@@ -1,46 +1,43 @@
-# 📊 Daily Transactions Analysis Project
+# Daily Transactions Analysis Project
 
-## 📌 Overview
+## 📌 Problem Statement
+Analyzed daily transaction data to identify revenue trends, top-performing products, and customer spending patterns to support business decision-making.
 
-This project analyzes daily transaction data and builds insights using Python and data visualization techniques.
+## 📊 Dataset Information
+- Dataset contains ~X records of daily transactions
+- Features include: Order Date, Product, Category, Sales, Region
 
 ## 🛠 Tools & Technologies
+- Python (Pandas, Matplotlib, Seaborn)
+- SQL (for data extraction and aggregation)
+- Excel / Power BI (for dashboard visualization)
 
-* Python
-* Pandas
-* Matplotlib / Seaborn
-* VS Code
+## 🔍 Analysis Performed
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- Revenue trend analysis (daily/monthly)
+- Product and category performance analysis
+- Region-wise sales analysis
 
-## 📁 Project Files
+## 📈 Key Insights
+- Top 3 products contribute ~X% of total revenue
+- Region X generates highest sales, contributing ~X% overall
+- Sales show peak during [month/day], indicating seasonal demand
+- Identified underperforming category with lowest revenue contribution
 
-* `daily_transaction_project.ipynb` → Main notebook (EDA & analysis)
-* `daily transcation code.py` → Core data processing code
-* `finance dashboard.py` → Dashboard visualization
-* `app.py` → (if used for Streamlit dashboard)
-
-## 📊 Features
-
-* Data Cleaning & Preprocessing
-* Exploratory Data Analysis (EDA)
-* Visualization of transaction patterns
-* Dashboard creation for insights
+## 📊 Dashboard
+Built an interactive dashboard to visualize:
+- Total revenue and profit
+- Monthly sales trends
+- Top-performing products
+- Region-wise distribution
 
 ## ▶️ How to Run
+1. Open the notebook in Google Colab or VS Code
+2. Run all cells for analysis
 
-1. Open `.ipynb` file in Google Colab
-2. Run all cells
-3. For dashboard:
-
-   ```
-   streamlit run app.py
-   ```
+For dashboard:
+streamlit run app.py
 
 ## 📌 Outcome
-
-* Identified patterns in transaction data
-* Built visual dashboards for better understanding
-
-## 📷 (Optional) Dashboard Preview
-
-(Add screenshot here later)
-
+This project demonstrates the ability to analyze transactional data and derive actionable business insights using Python and visualization tools.
